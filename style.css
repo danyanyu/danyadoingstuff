@@ -24,7 +24,7 @@ body{
     margin: 0px;
 }
 .bgvid{
-    height: 100vh;
+    height: 40vh;
     position: relative;
     /*background: transparent
     backdrop-filter: blur(10px);*/
@@ -32,12 +32,13 @@ body{
 @media (max-width: 750px) {
     #japanvid{display: none;}
     header{
-        background-image: url("japan1.png");
+        background-image: url("resources/japan1.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 50% 90% ;
     }
 }
-#maintitle{
+/*#maintitle{
     background: transparent;
     backdrop-filter: blur(10px);
     font-size: 5em;
@@ -46,9 +47,12 @@ body{
     padding: 20px;
     text-align: center;
 
-}
+}*/
 main p{
     margin: 20vh 20vw;
+    background-image: url("resources/japan1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #downarrow1{
     margin: 0 0;
