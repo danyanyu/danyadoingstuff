@@ -36,11 +36,14 @@ body{
     flex-direction: column;
     overflow: hidden;
 }
+header{
+    height: 60vh;
+}
 
 .bgvid video{
     position: absolute;
     object-fit: cover;
-    object-position: 50% 90%;
+    object-position: 50% 85%;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -48,15 +51,48 @@ body{
     margin: 0px;
 }
 .bgvid{
-    height: 30vh;
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
+    /*animation-name: expandheader;
+    animation-iteration-count: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;*/
 }
-.contacts{
-    flex-direction: column;
+/*.bgvid:hover{
+    animation-iteration-count: 1;
+}
+@keyframes expandheader{
+    from{height: 30vh;}
+    100%{height: 100vh;}
+}
+@keyframes collapseheader{
+    from{height: 100vh;}
+    100%{height: 30vh;}
+}*/
+/*.expandbutton{
+    position: relative;
+    width: 10%;
+    height: 5em;
     display: flex;
     align-self: end;
+    justify-content: center;
+}
+.expandbutton .button{
+    display: flex;
+    align-self: end;
+}*/
+/*@keyframes dribbling {
+    50%{transform: translateY(5px);}
+    to{transform: translateY(0px);}
+}*/
+.contacts{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    /*align-self: center;*/
+    justify-content: end;
 }
 .bgvid .clinks{
     /*background: transparent;
@@ -67,7 +103,8 @@ body{
     font-size: 1em;
     display: flex;
     align-items: baseline;
-    height: 30%;
+    height: auto;
+    width: 200px;
     margin: 2px;
     padding: 5px;
 }
@@ -89,7 +126,9 @@ body{
 }
 @media (max-width: 750px) {
     #japanvid{display: none;}
+    /*.expandbutton{margin-left: 30%;}*/
     header{
+        height: 40vh;
         background-image: url("resources/japan1.png");
         background-repeat: no-repeat;
         background-size: cover;
