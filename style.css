@@ -1,21 +1,34 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Handjet', cursive;
-    /*font-family: 'Lobster', cursive;*/
-}
-@font-face {
-    font-family: bladerunner;
-    src: url(bladerunner/BLADRMF_.TTF);
-}
 :root{
     --pink: #fbcdcd;
     --bluish: #9caebb;
     --bluishdark: #778299;
     --darkgray: #433d4c;
     --darkest: rgb(37, 29, 41);
+}
+.tmp{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tmp h1{
+    width: 100%;
+    color: rgb(245, 89, 89);
+    text-align: center;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkest);
+    /*font-family: 'Handjet', cursive;
+    /*font-family: 'Lobster', cursive;*/
+}
+@font-face {
+    font-family: bladerunner;
+    src: url(bladerunner/BLADRMF_.TTF);
 }
 .page{
     display: flex;
