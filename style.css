@@ -15,7 +15,7 @@ body{
     --bluish: #9caebb;
     --bluishdark: #778299;
     --darkgray: #433d4c;
-    --darkest: #251d29;
+    --darkest: rgb(37, 29, 41);
 }
 .page{
     display: flex;
@@ -46,10 +46,10 @@ body{
     align-self: end;
 }
 .bgvid .clinks{
-    background: transparent;
-    backdrop-filter: blur(30px);
+    /*background: transparent;
+    backdrop-filter: blur(30px);*/
     border-radius: 5px;
-    /*background-color: #433d4c;*/
+    background-color: rgb(37, 29, 41, 0.7);
     position: relative;
     font-size: 1em;
     display: flex;
