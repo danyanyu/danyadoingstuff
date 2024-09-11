@@ -26,10 +26,6 @@ body{
     /*font-family: 'Handjet', cursive;
     /*font-family: 'Lobster', cursive;*/
 }
-@font-face {
-    font-family: bladerunner;
-    src: url(bladerunner/BLADRMF_.TTF);
-}
 .page{
     display: flex;
     min-height: 100vh;
@@ -60,33 +56,6 @@ header{
     animation-duration: 2s;
     animation-timing-function: ease-in-out;*/
 }
-/*.bgvid:hover{
-    animation-iteration-count: 1;
-}
-@keyframes expandheader{
-    from{height: 30vh;}
-    100%{height: 100vh;}
-}
-@keyframes collapseheader{
-    from{height: 100vh;}
-    100%{height: 30vh;}
-}*/
-/*.expandbutton{
-    position: relative;
-    width: 10%;
-    height: 5em;
-    display: flex;
-    align-self: end;
-    justify-content: center;
-}
-.expandbutton .button{
-    display: flex;
-    align-self: end;
-}*/
-/*@keyframes dribbling {
-    50%{transform: translateY(5px);}
-    to{transform: translateY(0px);}
-}*/
 .contacts{
     height: 100%;
     flex-direction: column;
