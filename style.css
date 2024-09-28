@@ -189,6 +189,7 @@ main .abz .socials:visited{
     
 }
 .ImageFull{
+    margin: 10px;
     z-index: 110;
     opacity: 1.5;
     width: auto;
