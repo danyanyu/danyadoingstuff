@@ -12,24 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;500&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    <!--
-    <style>
-        body{
-            attribute : value;
+    <script>
+        function Show(arg){
+                document.getElementById(arg).style.display='block';
         }
-        something{
-            ...
+        function Hide(arg){
+            document.getElementById(arg).style.display='none';
         }
-    </style>
-    in css sheet can use:
-    #id{
-
-    }
-    .class{
-
-    }
--->
+    </script>
 </head>
 
 <body>
@@ -55,6 +45,45 @@
             </div>
             </div>
     <main id="main">
+        <div class="card-container">
+            <div class="Pic">
+                <img class="Image" src="/resources/japan.jpg" onclick="Show('1')"/>
+                <div class="ImageFS" id="1" onclick="Hide('1')"><img class="ImageFull" src="/resources/japan.jpg" />
+                <br>click anywhere to close
+                </div>
+            </div>
+            <div class="Pic">
+                <img class="Image" src="/resources/winter.jpg" onclick="Show('2')"/>
+                <div class="ImageFS" id="2" onclick="Hide('2')"><img class="ImageFull" src="/resources/winter.jpg" />
+                <br>click anywhere to close
+                </div>
+            </div>
+            <div class="Pic">
+                <img class="Image" src="/resources/train.jpg" onclick="Show('3')"/>
+                <div class="ImageFS" id="3" onclick="Hide('3')"><img class="ImageFull" src="/resources/train.jpg" />
+                <br>click anywhere to close
+                </div>
+            </div>
+            <div class="Pic">
+                <img class="Image" src="/resources/painting.png" onclick="Show('4')"/>
+                <div class="ImageFS" id="4" onclick="Hide('4')"><img class="ImageFull" src="/resources/painting.png" />
+                <br>click anywhere to close
+                </div>
+            </div>
+            <div class="Pic">
+                <img class="Image" src="/resources/stroginonoon.jpg" onclick="Show('5')"/>
+                <div class="ImageFS" id="5" onclick="Hide('5')"><img class="ImageFull" src="/resources/stroginonoon.jpg" />
+                <br>click anywhere to close
+                </div>
+            </div>
+            <div class="Pic">
+                <img class="Image" src="/resources/apocalypse.jpg" onclick="Show('6')"/>
+                <div class="ImageFS" id="6" onclick="Hide('6')"><img class="ImageFull" src="/resources/apocalypse.jpg" />
+                <br>click anywhere to close
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="palette" id="p1"></div>

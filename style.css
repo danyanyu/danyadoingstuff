@@ -15,6 +15,8 @@ body{
     margin: 0px;
     min-height: 100vh;
     width: calc(100vw - (100vw - 100%));
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -33,7 +35,7 @@ header{
     background-size: cover;
 }
 header h1{
-    font-size: calc((100vw - 375px)*0.03 + 32px);
+    font-size: calc((100vw - 375px)*0.025 + 32px);
     font-weight: 800;
     text-align: center;
     color: white;
@@ -118,31 +120,100 @@ header h1{
 }
 
 main{
-    background-color: white;
+    background-color: #9caebb;
     display: flex;
-    height: 200vh;
+    flex-direction: column;
+    min-height: 100%;
+    flex-grow: 1;
+    width: 100%;
     text-align: center;
     color: var(--darkest);
 }
+main .abz{
+    width: auto;
+    padding: 25px;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(37, 29, 41);
+    background: transparent;
+}
+main .abz .socials:link{
+    color: #433d4c;
+}
+main .abz .socials:visited{
+    color: #433d4c;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+
+.Pic{
+    height: 60vh;
+    width: auto;
+    min-width: fit-content;
+    flex: 0;  
+    padding: 3%;
+    margin: 1%;
+    background-color: var(--darkest);
+}
+
+.Image{height: 90%;
+    background-color: var(--darkest);
+}
+.ImageFS{
+    width: 100%;
+    height: 80vh;
+    padding: 10%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    opacity: 1.0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: var(--pink);
+    font-size: 0.8em;
+    font-weight: 400;
+    
+}
+.ImageFull{
+    z-index: 110;
+    opacity: 1.5;
+    width: auto;
+    height: 100%;
+}
+
 footer{
     position: relative;
     height: 10vh;
+    width: 100%;
     margin-top: auto;
 }
 #p1{background-color: white;
-    width: 100%; height: 5%;
+    width: 100%; height: 9%;
 }
 #p2{background-color: var(--pink);
-    width: 100%; height: 10%;
+    width: 100%; height: 12%;
 }
 #p3{background-color: var(--bluish);
     width: 100%; height: 15%;
 }
 #p4{background-color: var(--bluishdark);
-    width: 100%; height: 20%;
+    width: 100%; height: 18%;
 }
 #p5{background-color: var(--darkgray);
-    width: 100%; height: 25%;
+    width: 100%; height: 21%;
 }
 #p6{background-color: var(--darkest);
     width: 100%; height: 25%;
