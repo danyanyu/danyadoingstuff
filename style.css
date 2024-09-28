@@ -35,7 +35,7 @@ header{
     background-size: cover;
 }
 header h1{
-    font-size: calc((100vw - 375px)*0.025 + 32px);
+    font-size: calc((100vw - 375px)*0.03 + 20px);
     font-weight: 800;
     text-align: center;
     color: white;
@@ -105,12 +105,13 @@ header h1{
 
 .Controls{
     background-color: transparent;
+    font-size: calc((100vw - 375px) * 0.02 + 8px);
     border: none;
     color: var(--bluish);
     width: 20%;
     height: 100%;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -123,9 +124,8 @@ main{
     background-color: #9caebb;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     flex-grow: 1;
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
     text-align: center;
     color: var(--darkest);
 }
@@ -149,7 +149,7 @@ main .abz .socials:visited{
     display: flex;
     flex-direction: row;
     height: fit-content;
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -158,27 +158,28 @@ main .abz .socials:visited{
 
 
 .Pic{
-    height: 60vh;
-    width: auto;
-    min-width: fit-content;
+    height: 30vh;
+    width: fit-content;
+    max-width: calc(100vw - (100vw - 100%) - 10vw);
     flex: 0;  
-    padding: 3%;
+    padding: 2%;
     margin: 1%;
     background-color: var(--darkest);
 }
 
 .Image{height: 90%;
+    width: auto;
     background-color: var(--darkest);
 }
 .ImageFS{
-    width: 100%;
-    height: 80vh;
+    width: calc(100vw - (100vw - 100%));
+    height: 110vh;
     padding: 10%;
     z-index: 100;
     background-color: rgba(0,0,0,0.7);
     position: fixed;
     opacity: 1.0;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -191,7 +192,9 @@ main .abz .socials:visited{
     z-index: 110;
     opacity: 1.5;
     width: auto;
-    height: 100%;
+    height: auto;
+    max-width: calc(100vw - (100vw - 100%) - 10%);
+    max-height: 80vh;
 }
 
 footer{
